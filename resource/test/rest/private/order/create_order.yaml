@@ -1,0 +1,49 @@
+---
+- Request:
+    method: POST
+    url: "https://max-api.maicoin.com/api/v2/orders"
+    headers:
+      content-type:
+        - application/json
+      x-max-signature:
+        - (auth signature)
+      x-max-accesskey:
+        - (auth key)
+      x-max-payload:
+        - (auth payload)
+    body: "{\"client_oid\":\"max_rs_api_case_create_order\",\"market\":\"maxusdt\",\"nonce\":0,\"ord_type\":\"limit\",\"price\":\"1.0\",\"side\":\"sell\",\"volume\":\"23.4\"}"
+- Response:
+    status: 200
+    version: ~
+    headers:
+      date:
+        - "Sun, 14 Nov 2021 07:50:52 GMT"
+      set-cookie:
+        - (cookies)
+      x-runtime:
+        - "0.216582"
+      etag:
+        - "W/\"cd5894b45d14a455c3bdf840c925ceaa\""
+      content-encoding:
+        - gzip
+      content-security-policy-report-only:
+        - "child-src 'self'; connect-src 'self' https://*.facebook.com https://*.g.doubleclick.net https://*.google-analytics.com https://*.hotjar.com https://*.hotjar.io https://*.maicoin.com https://*.pusher.com https://*.rollbar.com https://bam.nr-data.net https://script.google.com wss://*.hotjar.com wss://*.maicoin.com wss://*.maicoin.com:8080; default-src 'self' https://*.maicoin.com wss://*.maicoin.com; font-src 'self' data: https://*.gstatic.com; frame-src 'self' https://*.facebook.com https://*.g.doubleclick.net https://*.google.com https://*.hotjar.com https://*.maicoin.com https://maicoin.webpush.freshchat.com https://wchat.freshchat.com wss://*.hotjar.com wss://*.maicoin.com; img-src 'self' data: https://*.facebook.com https://*.g.doubleclick.net https://*.google-analytics.com https://*.google.com https://*.google.com.tw https://*.googletagmanager.com https://*.gstatic.com https://*.hotjar.com https://*.maicoin.com https://*.s3-ap-southeast-1.amazonaws.com https://*.s3.ap-southeast-1.amazonaws.com https://s3-ap-southeast-1.amazonaws.com wss://*.hotjar.com wss://*.maicoin.com; manifest-src 'self'; media-src 'self'; object-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://*.cloudflare.com https://*.facebook.net https://*.g.doubleclick.net https://*.google-analytics.com https://*.google.com https://*.googleadservices.com https://*.googletagmanager.com https://*.gstatic.com https://*.hotjar.com https://*.maicoin.com https://*.newrelic.com https://*.pusher.com https://bam.nr-data.net https://wchat.freshchat.com wss://*.hotjar.com wss://*.maicoin.com; style-src 'self' 'unsafe-inline' https://*.googleapis.com https://*.maicoin.com https://wchat.freshchat.com wss://*.maicoin.com; worker-src 'self'; prefetch-src 'self'; report-uri https://reports-api.sqreen.io/browser/v0/csp-violations/csp_9456307cf9274644bfc380ceaf12e88d"
+      x-protected-by:
+        - Sqreen
+      referrer-policy:
+        - strict-origin-when-cross-origin
+      vary:
+        - Origin
+      strict-transport-security:
+        - max-age=31536000; includeSubDomains
+      content-type:
+        - application/json
+      x-iinfo:
+        - 13-52706355-52683918 pNNN RT(1636876252088 0) q(0 0 0 -1) r(3 3) U6
+      x-cdn:
+        - Imperva
+      cache-control:
+        - "max-age=0, private, must-revalidate"
+      x-request-id:
+        - 1-6190bfdc-1d6e604d492eb23b6dc8d5bf
+    body: "{\"avg_price\":\"0.0\",\"client_oid\":\"(test erased client_oid)\",\"created_at\":1636876252,\"created_at_in_ms\":1636876252685,\"executed_volume\":\"0.0\",\"group_id\":null,\"id\":1601376421,\"market\":\"maxusdt\",\"ord_type\":\"limit\",\"price\":\"1.0\",\"remaining_volume\":\"23.4\",\"side\":\"sell\",\"state\":\"wait\",\"stop_price\":null,\"trades_count\":0,\"updated_at\":1636876252,\"updated_at_in_ms\":1636876252685,\"volume\":\"23.4\"}"

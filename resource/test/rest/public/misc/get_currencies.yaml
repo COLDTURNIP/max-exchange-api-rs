@@ -1,0 +1,45 @@
+---
+- Request:
+    method: GET
+    url: "https://max-api.maicoin.com/api/v2/currencies?"
+    headers: {}
+    body: ""
+- Response:
+    status: 200
+    version: ~
+    headers:
+      content-security-policy-report-only:
+        - "child-src 'self'; connect-src 'self' https://*.facebook.com https://*.g.doubleclick.net https://*.google-analytics.com https://*.hotjar.com https://*.hotjar.io https://*.maicoin.com https://*.pusher.com https://*.rollbar.com https://bam.nr-data.net https://script.google.com wss://*.hotjar.com wss://*.maicoin.com wss://*.maicoin.com:8080; default-src 'self' https://*.maicoin.com wss://*.maicoin.com; font-src 'self' data: https://*.gstatic.com; frame-src 'self' https://*.facebook.com https://*.g.doubleclick.net https://*.google.com https://*.hotjar.com https://*.maicoin.com https://maicoin.webpush.freshchat.com https://wchat.freshchat.com wss://*.hotjar.com wss://*.maicoin.com; img-src 'self' data: https://*.facebook.com https://*.g.doubleclick.net https://*.google-analytics.com https://*.google.com https://*.google.com.tw https://*.googletagmanager.com https://*.gstatic.com https://*.hotjar.com https://*.maicoin.com https://*.s3-ap-southeast-1.amazonaws.com https://*.s3.ap-southeast-1.amazonaws.com https://s3-ap-southeast-1.amazonaws.com wss://*.hotjar.com wss://*.maicoin.com; manifest-src 'self'; media-src 'self'; object-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://*.cloudflare.com https://*.facebook.net https://*.g.doubleclick.net https://*.google-analytics.com https://*.google.com https://*.googleadservices.com https://*.googletagmanager.com https://*.gstatic.com https://*.hotjar.com https://*.maicoin.com https://*.newrelic.com https://*.pusher.com https://bam.nr-data.net https://wchat.freshchat.com wss://*.hotjar.com wss://*.maicoin.com; style-src 'self' 'unsafe-inline' https://*.googleapis.com https://*.maicoin.com https://wchat.freshchat.com wss://*.maicoin.com; worker-src 'self'; prefetch-src 'self'; report-uri https://reports-api.sqreen.io/browser/v0/csp-violations/csp_9456307cf9274644bfc380ceaf12e88d"
+      transfer-encoding:
+        - chunked
+      etag:
+        - "W/\"1771fbd65f65f5a4d7cd588a5b0c4ac8\""
+      vary:
+        - Origin
+      referrer-policy:
+        - strict-origin-when-cross-origin
+      content-encoding:
+        - gzip
+      x-runtime:
+        - "0.013442"
+      content-type:
+        - application/json
+      x-request-id:
+        - 1-618751d5-4b9dea56625a197f72ea3770
+      x-protected-by:
+        - Sqreen
+      cache-control:
+        - "max-age=0, private, must-revalidate"
+      x-iinfo:
+        - 8-4887218-4881908 pNNN RT(1636258261412 58) q(0 0 0 -1) r(1 1) U5
+      date:
+        - "Sun, 07 Nov 2021 04:11:01 GMT"
+      set-cookie:
+        - (cookies)
+      strict-transport-security:
+        - max-age=31536000; includeSubDomains
+      connection:
+        - keep-alive
+      x-cdn:
+        - Imperva
+    body: "[{\"id\":\"twd\",\"precision\":0,\"sygna_supported\":false},{\"id\":\"btc\",\"precision\":8,\"sygna_supported\":true},{\"id\":\"eth\",\"precision\":8,\"sygna_supported\":true},{\"id\":\"ltc\",\"precision\":8,\"sygna_supported\":true},{\"id\":\"bch\",\"precision\":8,\"sygna_supported\":true},{\"id\":\"mith\",\"precision\":8,\"sygna_supported\":true},{\"id\":\"usdt\",\"precision\":8,\"sygna_supported\":true},{\"id\":\"xrp\",\"precision\":6,\"sygna_supported\":true},{\"id\":\"max\",\"precision\":8,\"sygna_supported\":true},{\"id\":\"bcnt\",\"precision\":8,\"sygna_supported\":true},{\"id\":\"sand\",\"precision\":8,\"sygna_supported\":true},{\"id\":\"usdc\",\"precision\":8,\"sygna_supported\":true},{\"id\":\"link\",\"precision\":8,\"sygna_supported\":true},{\"id\":\"grt\",\"precision\":8,\"sygna_supported\":false},{\"id\":\"doge\",\"precision\":8,\"sygna_supported\":true},{\"id\":\"comp\",\"precision\":8,\"sygna_supported\":true},{\"id\":\"dot\",\"precision\":8,\"sygna_supported\":true},{\"id\":\"ada\",\"precision\":8,\"sygna_supported\":true},{\"id\":\"sol\",\"precision\":8,\"sygna_supported\":true}]"

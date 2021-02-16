@@ -1,0 +1,49 @@
+---
+- Request:
+    method: GET
+    url: "https://max-api.maicoin.com/api/v2/rewards/holding_reward?currency=max&from=1637316000&nonce=%28nonce%29"
+    headers:
+      x-max-payload:
+        - (auth payload)
+      x-max-accesskey:
+        - (auth key)
+      x-max-signature:
+        - (auth signature)
+      content-type:
+        - application/json
+    body: ""
+- Response:
+    status: 200
+    version: ~
+    headers:
+      vary:
+        - Origin
+      cache-control:
+        - "max-age=0, private, must-revalidate"
+      x-runtime:
+        - "0.023380"
+      content-security-policy-report-only:
+        - "child-src 'self'; connect-src 'self' https://*.facebook.com https://*.g.doubleclick.net https://*.google-analytics.com https://*.hotjar.com https://*.hotjar.io https://*.maicoin.com https://*.pusher.com https://*.rollbar.com https://bam.nr-data.net https://script.google.com wss://*.hotjar.com wss://*.maicoin.com wss://*.maicoin.com:8080; default-src 'self' https://*.maicoin.com wss://*.maicoin.com; font-src 'self' data: https://*.gstatic.com; frame-src 'self' https://*.facebook.com https://*.g.doubleclick.net https://*.google.com https://*.hotjar.com https://*.maicoin.com https://maicoin.webpush.freshchat.com https://wchat.freshchat.com wss://*.hotjar.com wss://*.maicoin.com; img-src 'self' data: https://*.facebook.com https://*.g.doubleclick.net https://*.google-analytics.com https://*.google.com https://*.google.com.tw https://*.googletagmanager.com https://*.gstatic.com https://*.hotjar.com https://*.maicoin.com https://*.s3-ap-southeast-1.amazonaws.com https://*.s3.ap-southeast-1.amazonaws.com https://s3-ap-southeast-1.amazonaws.com wss://*.hotjar.com wss://*.maicoin.com; manifest-src 'self'; media-src 'self'; object-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://*.cloudflare.com https://*.facebook.net https://*.g.doubleclick.net https://*.google-analytics.com https://*.google.com https://*.googleadservices.com https://*.googletagmanager.com https://*.gstatic.com https://*.hotjar.com https://*.maicoin.com https://*.newrelic.com https://*.pusher.com https://bam.nr-data.net https://wchat.freshchat.com wss://*.hotjar.com wss://*.maicoin.com; style-src 'self' 'unsafe-inline' https://*.googleapis.com https://*.maicoin.com https://wchat.freshchat.com wss://*.maicoin.com; worker-src 'self'; prefetch-src 'self'; report-uri https://reports-api.sqreen.io/browser/v0/csp-violations/csp_9456307cf9274644bfc380ceaf12e88d"
+      x-protected-by:
+        - Sqreen
+      set-cookie:
+        - (cookies)
+      referrer-policy:
+        - strict-origin-when-cross-origin
+      x-cdn:
+        - Imperva
+      x-iinfo:
+        - 2-3251379-3250960 pNNN RT(1637392155950 0) q(0 0 0 -1) r(1 1) U5
+      content-encoding:
+        - gzip
+      content-type:
+        - application/json
+      date:
+        - "Sat, 20 Nov 2021 07:09:16 GMT"
+      x-request-id:
+        - 1-61989f1c-254aa56b37eb3d571301ec84
+      etag:
+        - "W/\"dfd21c33f4775fe6141644905d97c608\""
+      strict-transport-security:
+        - max-age=31536000; includeSubDomains
+    body: "[{\"amount\":\"6.21724144\",\"created_at\":1637346829,\"currency\":\"max\",\"note\":\"(test erased note)\",\"state\":\"done\",\"type\":\"holding_reward\",\"uuid\":\"(test erased uuid)\"}]"

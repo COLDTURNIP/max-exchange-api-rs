@@ -1,0 +1,49 @@
+---
+- Request:
+    method: GET
+    url: "https://max-api.maicoin.com/api/v2/trades/my/of_order?id=1545763894&nonce=%28nonce%29"
+    headers:
+      content-type:
+        - application/json
+      x-max-payload:
+        - (auth payload)
+      x-max-signature:
+        - (auth signature)
+      x-max-accesskey:
+        - (auth key)
+    body: ""
+- Response:
+    status: 200
+    version: ~
+    headers:
+      date:
+        - "Sun, 14 Nov 2021 08:56:44 GMT"
+      etag:
+        - "W/\"0502aa356b5015680cd1a99700b5157b\""
+      set-cookie:
+        - (cookies)
+      content-security-policy-report-only:
+        - "child-src 'self'; connect-src 'self' https://*.facebook.com https://*.g.doubleclick.net https://*.google-analytics.com https://*.hotjar.com https://*.hotjar.io https://*.maicoin.com https://*.pusher.com https://*.rollbar.com https://bam.nr-data.net https://script.google.com wss://*.hotjar.com wss://*.maicoin.com wss://*.maicoin.com:8080; default-src 'self' https://*.maicoin.com wss://*.maicoin.com; font-src 'self' data: https://*.gstatic.com; frame-src 'self' https://*.facebook.com https://*.g.doubleclick.net https://*.google.com https://*.hotjar.com https://*.maicoin.com https://maicoin.webpush.freshchat.com https://wchat.freshchat.com wss://*.hotjar.com wss://*.maicoin.com; img-src 'self' data: https://*.facebook.com https://*.g.doubleclick.net https://*.google-analytics.com https://*.google.com https://*.google.com.tw https://*.googletagmanager.com https://*.gstatic.com https://*.hotjar.com https://*.maicoin.com https://*.s3-ap-southeast-1.amazonaws.com https://*.s3.ap-southeast-1.amazonaws.com https://s3-ap-southeast-1.amazonaws.com wss://*.hotjar.com wss://*.maicoin.com; manifest-src 'self'; media-src 'self'; object-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://*.cloudflare.com https://*.facebook.net https://*.g.doubleclick.net https://*.google-analytics.com https://*.google.com https://*.googleadservices.com https://*.googletagmanager.com https://*.gstatic.com https://*.hotjar.com https://*.maicoin.com https://*.newrelic.com https://*.pusher.com https://bam.nr-data.net https://wchat.freshchat.com wss://*.hotjar.com wss://*.maicoin.com; style-src 'self' 'unsafe-inline' https://*.googleapis.com https://*.maicoin.com https://wchat.freshchat.com wss://*.maicoin.com; worker-src 'self'; prefetch-src 'self'; report-uri https://reports-api.sqreen.io/browser/v0/csp-violations/csp_9456307cf9274644bfc380ceaf12e88d"
+      x-protected-by:
+        - Sqreen
+      cache-control:
+        - "max-age=0, private, must-revalidate"
+      vary:
+        - Origin
+      x-cdn:
+        - Imperva
+      x-iinfo:
+        - 4-31121387-31033775 pNNN RT(1636880204009 0) q(0 0 0 -1) r(0 0) U5
+      referrer-policy:
+        - strict-origin-when-cross-origin
+      content-encoding:
+        - gzip
+      content-type:
+        - application/json
+      x-runtime:
+        - "0.023972"
+      x-request-id:
+        - 1-6190cf4c-21469b7235e801c0586e43b6
+      strict-transport-security:
+        - max-age=31536000; includeSubDomains
+    body: "[{\"created_at\":1635853634,\"created_at_in_ms\":1635853634052,\"fee\":\"0.08908907\",\"fee_currency\":\"max\",\"funds\":\"163.28\",\"id\":29009013,\"market\":\"dotusdt\",\"market_name\":\"DOT/USDT\",\"price\":\"52.0\",\"side\":\"bid\",\"volume\":\"3.14\"}]"
