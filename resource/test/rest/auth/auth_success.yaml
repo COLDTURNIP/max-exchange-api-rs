@@ -1,0 +1,49 @@
+---
+- Request:
+    method: GET
+    url: "https://max-api.maicoin.com/api/v2/members/profile?nonce=%28nonce%29"
+    headers:
+      content-type:
+        - application/json
+      x-max-signature:
+        - (auth signature)
+      x-max-accesskey:
+        - (auth key)
+      x-max-payload:
+        - (auth payload)
+    body: ""
+- Response:
+    status: 200
+    version: ~
+    headers:
+      x-runtime:
+        - "0.092489"
+      etag:
+        - "W/\"3e933a6a42cffec07491f85e82b83323\""
+      x-request-id:
+        - 1-619ce1cc-34d087c72f42f56c491debb1
+      content-security-policy-report-only:
+        - "child-src 'self'; connect-src 'self' https://*.facebook.com https://*.g.doubleclick.net https://*.google-analytics.com https://*.hotjar.com https://*.hotjar.io https://*.maicoin.com https://*.pusher.com https://*.rollbar.com https://bam.nr-data.net https://script.google.com wss://*.hotjar.com wss://*.maicoin.com wss://*.maicoin.com:8080; default-src 'self' https://*.maicoin.com wss://*.maicoin.com; font-src 'self' data: https://*.gstatic.com; frame-src 'self' https://*.facebook.com https://*.g.doubleclick.net https://*.google.com https://*.hotjar.com https://*.maicoin.com https://maicoin.webpush.freshchat.com https://wchat.freshchat.com wss://*.hotjar.com wss://*.maicoin.com; img-src 'self' data: https://*.facebook.com https://*.g.doubleclick.net https://*.google-analytics.com https://*.google.com https://*.google.com.tw https://*.googletagmanager.com https://*.gstatic.com https://*.hotjar.com https://*.maicoin.com https://*.s3-ap-southeast-1.amazonaws.com https://*.s3.ap-southeast-1.amazonaws.com https://s3-ap-southeast-1.amazonaws.com wss://*.hotjar.com wss://*.maicoin.com; manifest-src 'self'; media-src 'self'; object-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://*.cloudflare.com https://*.facebook.net https://*.g.doubleclick.net https://*.google-analytics.com https://*.google.com https://*.googleadservices.com https://*.googletagmanager.com https://*.gstatic.com https://*.hotjar.com https://*.maicoin.com https://*.newrelic.com https://*.pusher.com https://bam.nr-data.net https://wchat.freshchat.com wss://*.hotjar.com wss://*.maicoin.com; style-src 'self' 'unsafe-inline' https://*.googleapis.com https://*.maicoin.com https://wchat.freshchat.com wss://*.maicoin.com; worker-src 'self'; prefetch-src 'self'; report-uri https://reports-api.sqreen.io/browser/v0/csp-violations/csp_9456307cf9274644bfc380ceaf12e88d"
+      content-encoding:
+        - gzip
+      content-type:
+        - application/json
+      date:
+        - "Tue, 23 Nov 2021 12:42:52 GMT"
+      referrer-policy:
+        - strict-origin-when-cross-origin
+      x-cdn:
+        - Imperva
+      cache-control:
+        - "max-age=0, private, must-revalidate"
+      vary:
+        - Origin
+      x-iinfo:
+        - 14-46075621-45937516 pNNN RT(1637671372668 0) q(0 0 0 0) r(2 2) U5
+      x-protected-by:
+        - Sqreen
+      set-cookie:
+        - (cookies)
+      strict-transport-security:
+        - max-age=31536000; includeSubDomains
+    body: "{\"agreement_checked\":true,\"any_kyc_rejected\":false,\"bank\":{\"account\":\"0000000000000\",\"bank_branch_name\":\"某某分行\",\"bank_code\":\"808\",\"bank_name\":\"玉山商業銀行\",\"branch\":\"8080000\",\"state\":\"verified\"},\"birthday\":\"198****-29\",\"country_code\":\"886\",\"current_two_factor_type\":\"app\",\"documents\":{\"cellphone_bill_state\":\"verified\",\"photo_id_back_state\":\"verified\",\"photo_id_front_state\":\"verified\",\"selfie_with_id_state\":\"verified\"},\"email\":\"(test erased email)\",\"gender\":\"M\",\"identity_number\":\"A12****789\",\"identity_type\":\"taiwan_id\",\"invoice_carrier_id\":\"/123ABCD\",\"invoice_carrier_type\":\"0a0000\",\"kyc_state\":\"verified\",\"language\":\"en\",\"level\":2,\"locked_status_of_2fa\":null,\"member_type\":\"type_twd\",\"name\":\"John Doe\",\"nationality\":\"TW\",\"phone_number\":\"227221314\",\"profile_verified\":true,\"referral_code\":\"58b11077\",\"sn\":\"(test erased sn)\",\"status\":\"activated\",\"supplemental_document_type\":\"health_id_card\",\"two_factor\":{\"app\":\"activated\",\"sms\":\"activated\"},\"vip_level\":0}"

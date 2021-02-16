@@ -1,0 +1,49 @@
+---
+- Request:
+    method: GET
+    url: "https://max-api.maicoin.com/api/v2/deposit_addresses?currency=btc&nonce=%28nonce%29"
+    headers:
+      content-type:
+        - application/json
+      x-max-signature:
+        - (auth signature)
+      x-max-payload:
+        - (auth payload)
+      x-max-accesskey:
+        - (auth key)
+    body: ""
+- Response:
+    status: 200
+    version: ~
+    headers:
+      referrer-policy:
+        - strict-origin-when-cross-origin
+      set-cookie:
+        - (cookies)
+      x-request-id:
+        - 1-618e7f3d-7b14810a0606295b12267d33
+      x-protected-by:
+        - Sqreen
+      content-security-policy-report-only:
+        - "child-src 'self'; connect-src 'self' https://*.facebook.com https://*.g.doubleclick.net https://*.google-analytics.com https://*.hotjar.com https://*.hotjar.io https://*.maicoin.com https://*.pusher.com https://*.rollbar.com https://bam.nr-data.net https://script.google.com wss://*.hotjar.com wss://*.maicoin.com wss://*.maicoin.com:8080; default-src 'self' https://*.maicoin.com wss://*.maicoin.com; font-src 'self' data: https://*.gstatic.com; frame-src 'self' https://*.facebook.com https://*.g.doubleclick.net https://*.google.com https://*.hotjar.com https://*.maicoin.com https://maicoin.webpush.freshchat.com https://wchat.freshchat.com wss://*.hotjar.com wss://*.maicoin.com; img-src 'self' data: https://*.facebook.com https://*.g.doubleclick.net https://*.google-analytics.com https://*.google.com https://*.google.com.tw https://*.googletagmanager.com https://*.gstatic.com https://*.hotjar.com https://*.maicoin.com https://*.s3-ap-southeast-1.amazonaws.com https://*.s3.ap-southeast-1.amazonaws.com https://s3-ap-southeast-1.amazonaws.com wss://*.hotjar.com wss://*.maicoin.com; manifest-src 'self'; media-src 'self'; object-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://*.cloudflare.com https://*.facebook.net https://*.g.doubleclick.net https://*.google-analytics.com https://*.google.com https://*.googleadservices.com https://*.googletagmanager.com https://*.gstatic.com https://*.hotjar.com https://*.maicoin.com https://*.newrelic.com https://*.pusher.com https://bam.nr-data.net https://wchat.freshchat.com wss://*.hotjar.com wss://*.maicoin.com; style-src 'self' 'unsafe-inline' https://*.googleapis.com https://*.maicoin.com https://wchat.freshchat.com wss://*.maicoin.com; worker-src 'self'; prefetch-src 'self'; report-uri https://reports-api.sqreen.io/browser/v0/csp-violations/csp_9456307cf9274644bfc380ceaf12e88d"
+      content-type:
+        - application/json
+      x-runtime:
+        - "0.025183"
+      x-cdn:
+        - Imperva
+      content-encoding:
+        - gzip
+      x-iinfo:
+        - 14-65225945-65048141 pNNN RT(1636728637293 0) q(0 0 0 -1) r(1 1) U5
+      cache-control:
+        - "max-age=0, private, must-revalidate"
+      vary:
+        - Origin
+      etag:
+        - "W/\"fe07b24edf78e6c5571c9c451060f3fc\""
+      date:
+        - "Fri, 12 Nov 2021 14:50:37 GMT"
+      strict-transport-security:
+        - max-age=31536000; includeSubDomains
+    body: "[{\"address\":\"(test erased address)\",\"composite_currency\":\"btc\",\"created_at\":1599742451,\"currency\":\"btc\",\"label\":null,\"sn\":\"(test erased sn)\",\"type\":\"exchange\",\"version\":null}]"

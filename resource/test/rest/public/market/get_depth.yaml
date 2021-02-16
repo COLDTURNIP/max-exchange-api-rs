@@ -1,0 +1,41 @@
+---
+- Request:
+    method: GET
+    url: "https://max-api.maicoin.com/api/v2/depth?market=btctwd&limit=10&sort_by_price=true"
+    headers: {}
+    body: ""
+- Response:
+    status: 200
+    version: ~
+    headers:
+      transfer-encoding:
+        - chunked
+      cache-control:
+        - "max-age=0, private, must-revalidate"
+      connection:
+        - keep-alive
+      x-request-id:
+        - 1-6187519d-2231fa5a534c82ea251c209d
+      date:
+        - "Sun, 07 Nov 2021 04:10:05 GMT"
+      etag:
+        - "W/\"c18da9219a18872c1f10cdf568dddc5c\""
+      strict-transport-security:
+        - max-age=31536000; includeSubDomains
+      vary:
+        - Origin
+      content-type:
+        - application/json
+      set-cookie:
+        - (cookies)
+      x-iinfo:
+        - 12-14410401-14380815 pNNN RT(1636258205730 55) q(0 0 0 -1) r(1 1) U5
+      content-encoding:
+        - gzip
+      referrer-policy:
+        - strict-origin-when-cross-origin
+      x-runtime:
+        - "0.010841"
+      x-cdn:
+        - Imperva
+    body: "{\"timestamp\":1636258205,\"last_update_version\":1635855699255,\"last_update_id\":4870357,\"asks\":[[\"1739999.0\",\"0.00278039\"],[\"1739716.7\",\"0.00487816\"],[\"1739702.1\",\"0.00164\"],[\"1739517.2\",\"0.04280589\"],[\"1739300.0\",\"0.04813442\"],[\"1739000.0\",\"0.00672513\"],[\"1738690.3\",\"0.00122943\"],[\"1738604.8\",\"0.0199928\"],[\"1738001.0\",\"0.01522115\"],[\"1738000.0\",\"0.1159757\"]],\"bids\":[[\"1737000.0\",\"0.2567111\"],[\"1734381.3\",\"0.001639\"],[\"1734207.8\",\"0.003217\"],[\"1734034.3\",\"0.004825\"],[\"1732646.3\",\"0.002431\"],[\"1732011.0\",\"0.01\"],[\"1732010.0\",\"0.00057717\"],[\"1732001.0\",\"0.02984005\"],[\"1732000.0\",\"0.05773672\"],[\"1731533.5\",\"0.00060062\"]]}"

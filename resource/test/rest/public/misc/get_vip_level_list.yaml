@@ -1,0 +1,45 @@
+---
+- Request:
+    method: GET
+    url: "https://max-api.maicoin.com/api/v2/vip_levels?"
+    headers: {}
+    body: ""
+- Response:
+    status: 200
+    version: ~
+    headers:
+      content-type:
+        - application/json
+      date:
+        - "Sun, 07 Nov 2021 04:11:01 GMT"
+      x-runtime:
+        - "0.118506"
+      content-encoding:
+        - gzip
+      x-iinfo:
+        - 6-7805735-7804323 pNNN RT(1636258261414 58) q(0 0 0 -1) r(2 2) U5
+      content-security-policy-report-only:
+        - "child-src 'self'; connect-src 'self' https://*.facebook.com https://*.g.doubleclick.net https://*.google-analytics.com https://*.hotjar.com https://*.hotjar.io https://*.maicoin.com https://*.pusher.com https://*.rollbar.com https://bam.nr-data.net https://script.google.com wss://*.hotjar.com wss://*.maicoin.com wss://*.maicoin.com:8080; default-src 'self' https://*.maicoin.com wss://*.maicoin.com; font-src 'self' data: https://*.gstatic.com; frame-src 'self' https://*.facebook.com https://*.g.doubleclick.net https://*.google.com https://*.hotjar.com https://*.maicoin.com https://maicoin.webpush.freshchat.com https://wchat.freshchat.com wss://*.hotjar.com wss://*.maicoin.com; img-src 'self' data: https://*.facebook.com https://*.g.doubleclick.net https://*.google-analytics.com https://*.google.com https://*.google.com.tw https://*.googletagmanager.com https://*.gstatic.com https://*.hotjar.com https://*.maicoin.com https://*.s3-ap-southeast-1.amazonaws.com https://*.s3.ap-southeast-1.amazonaws.com https://s3-ap-southeast-1.amazonaws.com wss://*.hotjar.com wss://*.maicoin.com; manifest-src 'self'; media-src 'self'; object-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://*.cloudflare.com https://*.facebook.net https://*.g.doubleclick.net https://*.google-analytics.com https://*.google.com https://*.googleadservices.com https://*.googletagmanager.com https://*.gstatic.com https://*.hotjar.com https://*.maicoin.com https://*.newrelic.com https://*.pusher.com https://bam.nr-data.net https://wchat.freshchat.com wss://*.hotjar.com wss://*.maicoin.com; style-src 'self' 'unsafe-inline' https://*.googleapis.com https://*.maicoin.com https://wchat.freshchat.com wss://*.maicoin.com; worker-src 'self'; prefetch-src 'self'; report-uri https://reports-api.sqreen.io/browser/v0/csp-violations/csp_9456307cf9274644bfc380ceaf12e88d"
+      referrer-policy:
+        - strict-origin-when-cross-origin
+      x-protected-by:
+        - Sqreen
+      transfer-encoding:
+        - chunked
+      connection:
+        - keep-alive
+      x-cdn:
+        - Imperva
+      x-request-id:
+        - 1-618751d5-350eaca0003282351d6dc329
+      set-cookie:
+        - (cookies)
+      etag:
+        - "W/\"a1f2e594db5ce4ccfacc602a3045e603\""
+      strict-transport-security:
+        - max-age=31536000; includeSubDomains
+      vary:
+        - Origin
+      cache-control:
+        - "max-age=0, private, must-revalidate"
+    body: "[{\"level\":0,\"minimum_trading_volume\":0,\"minimum_staking_volume\":0,\"maker_fee\":0.00045,\"taker_fee\":0.0015},{\"level\":1,\"minimum_trading_volume\":3000000,\"minimum_staking_volume\":500,\"maker_fee\":0.00035999999999999997,\"taker_fee\":0.00135},{\"level\":2,\"minimum_trading_volume\":10000000,\"minimum_staking_volume\":3000,\"maker_fee\":0.00028000000000000003,\"taker_fee\":0.0012},{\"level\":3,\"minimum_trading_volume\":30000000,\"minimum_staking_volume\":10000,\"maker_fee\":0.0,\"taker_fee\":0.00105},{\"level\":4,\"minimum_trading_volume\":150000000,\"minimum_staking_volume\":10000,\"maker_fee\":0.0,\"taker_fee\":0.0009},{\"level\":5,\"minimum_trading_volume\":300000000,\"minimum_staking_volume\":10000,\"maker_fee\":-8.0e-05,\"taker_fee\":0.00075},{\"level\":6,\"minimum_trading_volume\":600000000,\"minimum_staking_volume\":10000,\"maker_fee\":-8.0e-05,\"taker_fee\":0.0006},{\"level\":7,\"minimum_trading_volume\":1000000000,\"minimum_staking_volume\":15000,\"maker_fee\":-8.0e-05,\"taker_fee\":0.00055},{\"level\":8,\"minimum_trading_volume\":1500000000,\"minimum_staking_volume\":15000,\"maker_fee\":-8.0e-05,\"taker_fee\":0.0005},{\"level\":9,\"minimum_trading_volume\":2000000000,\"minimum_staking_volume\":15000,\"maker_fee\":-8.0e-05,\"taker_fee\":0.00045}]"

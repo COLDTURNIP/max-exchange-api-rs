@@ -1,0 +1,45 @@
+---
+- Request:
+    method: GET
+    url: "https://max-api.maicoin.com/api/v2/members/profile?nonce=%28nonce%29"
+    headers:
+      x-max-accesskey:
+        - (auth key)
+      x-max-payload:
+        - (auth payload)
+      x-max-signature:
+        - (auth signature)
+      content-type:
+        - application/json
+    body: ""
+- Response:
+    status: 401
+    version: ~
+    headers:
+      set-cookie:
+        - (cookies)
+      date:
+        - "Tue, 23 Nov 2021 12:42:52 GMT"
+      x-cdn:
+        - Imperva
+      strict-transport-security:
+        - max-age=31536000; includeSubDomains
+      vary:
+        - Origin
+      x-runtime:
+        - "0.004882"
+      x-request-id:
+        - 1-619ce1cc-3e1246c832abd98730b8a7cf
+      cache-control:
+        - no-cache
+      content-encoding:
+        - gzip
+      x-protected-by:
+        - Sqreen
+      x-iinfo:
+        - 14-46075622-45950714 pNYN RT(1637671372668 0) q(0 0 0 1) r(1 1) U5
+      content-type:
+        - application/json
+      content-security-policy-report-only:
+        - "child-src 'self'; connect-src 'self' https://*.facebook.com https://*.g.doubleclick.net https://*.google-analytics.com https://*.hotjar.com https://*.hotjar.io https://*.maicoin.com https://*.pusher.com https://*.rollbar.com https://bam.nr-data.net https://script.google.com wss://*.hotjar.com wss://*.maicoin.com wss://*.maicoin.com:8080; default-src 'self' https://*.maicoin.com wss://*.maicoin.com; font-src 'self' data: https://*.gstatic.com; frame-src 'self' https://*.facebook.com https://*.g.doubleclick.net https://*.google.com https://*.hotjar.com https://*.maicoin.com https://maicoin.webpush.freshchat.com https://wchat.freshchat.com wss://*.hotjar.com wss://*.maicoin.com; img-src 'self' data: https://*.facebook.com https://*.g.doubleclick.net https://*.google-analytics.com https://*.google.com https://*.google.com.tw https://*.googletagmanager.com https://*.gstatic.com https://*.hotjar.com https://*.maicoin.com https://*.s3-ap-southeast-1.amazonaws.com https://*.s3.ap-southeast-1.amazonaws.com https://s3-ap-southeast-1.amazonaws.com wss://*.hotjar.com wss://*.maicoin.com; manifest-src 'self'; media-src 'self'; object-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://*.cloudflare.com https://*.facebook.net https://*.g.doubleclick.net https://*.google-analytics.com https://*.google.com https://*.googleadservices.com https://*.googletagmanager.com https://*.gstatic.com https://*.hotjar.com https://*.maicoin.com https://*.newrelic.com https://*.pusher.com https://bam.nr-data.net https://wchat.freshchat.com wss://*.hotjar.com wss://*.maicoin.com; style-src 'self' 'unsafe-inline' https://*.googleapis.com https://*.maicoin.com https://wchat.freshchat.com wss://*.maicoin.com; worker-src 'self'; prefetch-src 'self'; report-uri https://reports-api.sqreen.io/browser/v0/csp-violations/csp_9456307cf9274644bfc380ceaf12e88d"
+    body: "{\"error\":{\"code\":2008,\"message\":\"The access key does not exist.\"},\"success\":false}"

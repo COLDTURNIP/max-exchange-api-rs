@@ -1,0 +1,49 @@
+---
+- Request:
+    method: GET
+    url: "https://max-api.maicoin.com/api/v2/members/accounts/doge?nonce=%28nonce%29"
+    headers:
+      content-type:
+        - application/json
+      x-max-payload:
+        - (auth payload)
+      x-max-signature:
+        - (auth signature)
+      x-max-accesskey:
+        - (auth key)
+    body: ""
+- Response:
+    status: 200
+    version: ~
+    headers:
+      cache-control:
+        - "max-age=0, private, must-revalidate"
+      referrer-policy:
+        - strict-origin-when-cross-origin
+      x-runtime:
+        - "0.025255"
+      vary:
+        - Origin
+      strict-transport-security:
+        - max-age=31536000; includeSubDomains
+      content-encoding:
+        - gzip
+      x-iinfo:
+        - 8-4033671-4005096 pNNN RT(1637390800348 0) q(0 0 0 -1) r(1 1) U5
+      date:
+        - "Sat, 20 Nov 2021 06:46:41 GMT"
+      set-cookie:
+        - (cookies)
+      etag:
+        - "W/\"85a418467067f8221ac3550bc1df59d8\""
+      x-request-id:
+        - 1-619899d1-1ca148124ca68c9766de23c5
+      x-protected-by:
+        - Sqreen
+      content-security-policy-report-only:
+        - "child-src 'self'; connect-src 'self' https://*.facebook.com https://*.g.doubleclick.net https://*.google-analytics.com https://*.hotjar.com https://*.hotjar.io https://*.maicoin.com https://*.pusher.com https://*.rollbar.com https://bam.nr-data.net https://script.google.com wss://*.hotjar.com wss://*.maicoin.com wss://*.maicoin.com:8080; default-src 'self' https://*.maicoin.com wss://*.maicoin.com; font-src 'self' data: https://*.gstatic.com; frame-src 'self' https://*.facebook.com https://*.g.doubleclick.net https://*.google.com https://*.hotjar.com https://*.maicoin.com https://maicoin.webpush.freshchat.com https://wchat.freshchat.com wss://*.hotjar.com wss://*.maicoin.com; img-src 'self' data: https://*.facebook.com https://*.g.doubleclick.net https://*.google-analytics.com https://*.google.com https://*.google.com.tw https://*.googletagmanager.com https://*.gstatic.com https://*.hotjar.com https://*.maicoin.com https://*.s3-ap-southeast-1.amazonaws.com https://*.s3.ap-southeast-1.amazonaws.com https://s3-ap-southeast-1.amazonaws.com wss://*.hotjar.com wss://*.maicoin.com; manifest-src 'self'; media-src 'self'; object-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://*.cloudflare.com https://*.facebook.net https://*.g.doubleclick.net https://*.google-analytics.com https://*.google.com https://*.googleadservices.com https://*.googletagmanager.com https://*.gstatic.com https://*.hotjar.com https://*.maicoin.com https://*.newrelic.com https://*.pusher.com https://bam.nr-data.net https://wchat.freshchat.com wss://*.hotjar.com wss://*.maicoin.com; style-src 'self' 'unsafe-inline' https://*.googleapis.com https://*.maicoin.com https://wchat.freshchat.com wss://*.maicoin.com; worker-src 'self'; prefetch-src 'self'; report-uri https://reports-api.sqreen.io/browser/v0/csp-violations/csp_9456307cf9274644bfc380ceaf12e88d"
+      content-type:
+        - application/json
+      x-cdn:
+        - Imperva
+    body: "{\"balance\":\"10000.25\",\"currency\":\"doge\",\"locked\":\"0.0\",\"type\":\"exchange\"}"
