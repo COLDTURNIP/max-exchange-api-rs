@@ -3,6 +3,7 @@ name = "maicoin_max"
 version = "2.0.0"
 authors = ["Raphanus Lo <coldturnip@gmail.com>"]
 homepage = "https://github.com/COLDTURNIP/max-exchange-api-rs"
+repository = "https://github.com/COLDTURNIP/max-exchange-api-rs"
 edition = "2018"
 license-file = "LICENSE"
 

@@ -2,7 +2,7 @@
 
 [![Build Status]][actions] [![Latest Version]][crates.io]
 
-[Build Status]: https://img.shields.io/github/workflow/COLDTURNIP/max-exchange-api-rs/serde/CI/master
+[Build Status]: https://img.shields.io/github/workflow/status/COLDTURNIP/max-exchange-api-rs/CI/main
 [actions]: https://github.com/COLDTURNIP/max-exchange-api-rs/actions?query=branch%3Amain
 [Latest Version]: https://img.shields.io/crates/v/maicoin_max.svg
 [crates.io]: https://crates.io/crates/maicoin_max
