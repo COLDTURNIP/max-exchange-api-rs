@@ -37,7 +37,7 @@ In `Cargo.toml`:
 
 ```toml
 [dependencies]
-maicoin_max = "2.0.0"
+maicoin_max = "2.0"
 ```
 
 No feature flag required.
