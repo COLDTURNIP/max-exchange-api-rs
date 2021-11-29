@@ -70,3 +70,10 @@ Sessionx.vim
 tags
 # Persistent undo
 [._]*.un~
+
+###################
+#  jetBrains IDE  #
+###################
+
+.idea
+
