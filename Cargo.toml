@@ -12,6 +12,8 @@ categories = ["api-bindings", "cryptography::cryptocurrencies"]
 keywords = ["exchange", "maicoin", "maicoin-max", "cryptocurrencies", "bitcoin"]
 readme = "README.md"
 
+exclude = [".*", "/resource/test"]
+
 [dependencies]
 anyhow = "1.0"
 base64 = "0.13"
