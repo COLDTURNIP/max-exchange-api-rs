@@ -1,6 +1,6 @@
 [package]
 name = "maicoin_max"
-version = "2.1.0"
+version = "2.1.1"
 authors = ["Raphanus Lo <coldturnip@gmail.com>"]
 homepage = "https://github.com/COLDTURNIP/max-exchange-api-rs"
 repository = "https://github.com/COLDTURNIP/max-exchange-api-rs"
