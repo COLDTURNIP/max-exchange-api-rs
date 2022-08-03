@@ -115,6 +115,7 @@ No feature flag required.
   - [x] Orderbook feeds
   - [x] Trade feeds
   - [x] Ticker feeds
+  - [x] Market status feeds
 - Private Channels
   - [x] Authentication & Subscribe
   - [x] Order feeds
