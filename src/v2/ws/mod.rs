@@ -412,6 +412,8 @@ pub enum ServerPushEvent {
     PubTradeFeed(feed::PubTradeFeed),
     /// Server pushed public ticker feeds
     PubTickerFeed(feed::PubTickerFeed),
+    /// Server pushed public market status feeds
+    PubMarketStatueFeed(feed::PubMarketStatueFeed),
 
     /// Server pushed private orderbook feeds
     PrivOrderbookFeed(feed::PrivOrderBookFeed),
@@ -442,6 +444,7 @@ impl<'de> Deserialize<'de> for ServerPushEvent {
                 (_, "book") => serde_json::from_value(root).map(Self::PubOrderbookFeed),
                 (_, "trade") => serde_json::from_value(root).map(Self::PubTradeFeed),
                 (_, "ticker") => serde_json::from_value(root).map(Self::PubTickerFeed),
+                (_, "market_status") => serde_json::from_value(root).map(Self::PubMarketStatueFeed),
 
                 // private channels
                 (et, "user") if et.starts_with("order_") => {
@@ -887,6 +890,22 @@ mod tests {
              "T": 123456789
             }),
             json!({
+              "c": "market_status",
+              "e": "update",
+              "ms": [{
+                  "M": "btctwd",
+                  "st": "active",
+                  "bu": "btc",
+                  "bup": 8,
+                  "mba": 0.0004,
+                  "qu": "twd",
+                  "qup": 1,
+                  "mqa": 250,
+                  "mws": true
+                }],
+              "T": 1659428472313
+            }),
+            json!({
               "c": "user",
               "e": "order_update",
               "o": [{
@@ -943,7 +962,7 @@ mod tests {
             }),
         ];
 
-        let mut checked: i8 = 10;
+        let mut checked: i8 = 11;
         for (i, orig) in orig_list.into_iter().enumerate() {
             match serde_json::from_value::<ServerPushEvent>(orig)
                 .unwrap_or_else(|_| panic!("failed to deserialize at #{}", i))
@@ -976,16 +995,20 @@ mod tests {
                     assert_eq!(6, i);
                     checked -= 1
                 }
-                ServerPushEvent::PrivOrderbookFeed(_) => {
+                ServerPushEvent::PubMarketStatueFeed(_) => {
                     assert_eq!(7, i);
                     checked -= 1
                 }
-                ServerPushEvent::PrivTradeFeed(_) => {
+                ServerPushEvent::PrivOrderbookFeed(_) => {
                     assert_eq!(8, i);
                     checked -= 1
                 }
-                ServerPushEvent::PrivBalanceFeed(_) => {
+                ServerPushEvent::PrivTradeFeed(_) => {
                     assert_eq!(9, i);
+                    checked -= 1
+                }
+                ServerPushEvent::PrivBalanceFeed(_) => {
+                    assert_eq!(10, i);
                     checked -= 1
                 }
             }

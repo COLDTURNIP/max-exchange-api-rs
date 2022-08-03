@@ -216,6 +216,59 @@ pub struct TickerRec {
     pub volume: Decimal,
 }
 
+// ===============================
+// Market status feed from public channel
+// ===============================
+
+/// Market status feed from public channel.
+///
+/// [Official document](https://maicoin.github.io/max-websocket-docs/#/public_market_status)
+#[derive(Deserialize, Debug, Eq, PartialEq)]
+pub struct PubMarketStatueFeed {
+    /// `true` if this feed is a snapshot.
+    #[serde(rename = "c")]
+    pub channel: String,
+    #[serde(rename = "e", deserialize_with = "parse_pub_feed_type")]
+    pub is_snapshot: bool,
+    /// Market name.
+    #[serde(rename = "ms")]
+    pub markets: Vec<MarketStatusInfo>,
+}
+
+impl Feed for PubMarketStatueFeed {
+    type Records = Vec<MarketStatusInfo>;
+
+    fn is_snapshot(&self) -> bool {
+        self.is_snapshot
+    }
+
+    fn into_record(self) -> Self::Records {
+        self.markets
+    }
+}
+
+#[derive(Deserialize, Debug, Eq, PartialEq)]
+pub struct MarketStatusInfo {
+    #[serde(rename = "M")]
+    pub market: String,
+    #[serde(rename = "st")]
+    pub status: String,
+    #[serde(rename = "bu")]
+    pub base_unit: String,
+    #[serde(rename = "bup")]
+    pub base_unit_precision: i8,
+    #[serde(rename = "mba")]
+    pub min_base_amount: Decimal,
+    #[serde(rename = "qu")]
+    pub quote_unit: String,
+    #[serde(rename = "qup")]
+    pub quote_unit_precision: i8,
+    #[serde(rename = "mqa")]
+    pub min_quote_amount: Decimal,
+    #[serde(rename = "mws")]
+    pub m_wallet_supported: bool,
+}
+
 // ===================================================
 // Orderbook feed from private (authenticated) channel
 // ===================================================
