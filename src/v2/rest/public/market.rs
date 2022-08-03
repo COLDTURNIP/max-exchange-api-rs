@@ -277,18 +277,22 @@ pub struct MarketInfo {
     pub id: Symbol,
     /// name: market name.
     pub name: String,
+    /// market_status: market status.
+    pub market_status: String,
     /// base_unit: base unit.
     pub base_unit: String,
     /// base_unit_precision: fixed precision of base unit.
-    pub base_unit_precision: u8,
+    pub base_unit_precision: i8,
     /// min_base_amount: minimum of base amount.
     pub min_base_amount: Decimal,
     /// quote_unit: quote unit.
     pub quote_unit: String,
     /// quote_unit_precision: fixed precision of quote unit.
-    pub quote_unit_precision: u8,
+    pub quote_unit_precision: i8,
     /// min_quote_amount: minimum of quote amount.
     pub min_quote_amount: Decimal,
+    /// m_wallet_supported: m wallet supported.
+    pub m_wallet_supported: bool,
 }
 
 /// Coin information
@@ -450,18 +454,20 @@ mod tests {
             .expect("Error while sending request");
         let result = GetMarkets::read_response(resp.into()).await;
         let market_list: Vec<MarketInfo> = result.expect("failed to parse result");
-        assert_eq!(market_list.len(), 34);
+        assert_eq!(market_list.len(), 55);
         assert_eq!(
             market_list[0],
             MarketInfo {
                 id: "maxtwd".into(),
                 name: "MAX/TWD".into(),
+                market_status: "active".into(),
                 base_unit: "max".into(),
                 base_unit_precision: 2,
                 min_base_amount: dec!(21),
                 quote_unit: "twd".into(),
                 quote_unit_precision: 4,
                 min_quote_amount: dec!(250),
+                m_wallet_supported: false,
             }
         )
     }
